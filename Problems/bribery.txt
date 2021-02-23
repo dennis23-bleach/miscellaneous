@@ -1,0 +1,33 @@
+first solution
+
+    ex: initial : 1 2 3 4 5
+        final : 2 1 5 3 4 
+
+
+    1. match the initial queue to the endpoint
+        
+        i.e : 1 2 3 5 4
+              1 2 5 3 4 
+              2 1 5 3 4
+    
+    2. match the endpoint to the initial
+
+        i.e : 1 2 5 3 4
+              1 2 3 5 4
+              1 2 3 4 5
+
+    3. compare each element of initial with each element of final
+
+        i.e : initial[0] == final[0-n]
+              initial[1] == final[0-n] 
+              .
+              .
+              .
+              initial[n] == final[0-n] 
+
+        keep a counter for each loop
+        if : 
+            matched within 2 turns...reset counter
+        else :
+            Too Chaotic    
+              
